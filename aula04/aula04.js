@@ -106,7 +106,7 @@ switch(tipoCartao) {
         
     
     default:
-        casoTipo = "Voce não escolheu um Cartão";
+        casoCartao = "Voce não escolheu um Cartão";
         break;
 }
 
