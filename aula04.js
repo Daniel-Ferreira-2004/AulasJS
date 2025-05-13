@@ -18,120 +18,130 @@
         promptFn = prompt;
         alertFn = alert;
     }
+    
 
     nome = 'Igor'; //Criamos uma variável tipo String para guardar o nome do usuário
-var idade = 24; //Criamos uma variável tipo number para guardar a idade do usuário
+    var idade = 24; //Criamos uma variável tipo number para guardar a idade do usuário
 
-var mensagem = `Olá, meu nome é ${nome} e tenho ${idade} anos de idade`; //Criamos uma variável chamada mensagem para exibir o texto contendo as duas variáveis que foram declaradas
-console.log(mensagem); //Criamos o Console.log para fazer a impressão da variável "mensagem".
-
-
-//criem uma mensagem para informar profissão e salário de um Trabalhador
-var profissao = "professor";
-let salario = 5046
-let retornoSalario = `A profissão dele é ${profissao} e ele recebe ao mês ${salario} reais`;
-console.log(retornoSalario);
+    var mensagem = `Olá, meu nome é ${nome} e tenho ${idade} anos de idade`; //Criamos uma variável chamada mensagem para exibir o texto contendo as duas variáveis que foram declaradas
+    console.log(mensagem); //Criamos o Console.log para fazer a impressão da variável "mensagem".
 
 
-//criem uma mensagem para informar raça e idade de um cachorro
-
-let raca = "Bruno";
-let idadeCachorro = "-1";
-let cachorro = `A idade do cachorro sarnento podre ${raca}, é de ${idadeCachorro} anos`;
-console.log(cachorro);
-
-//Bloco paises//
+    //criem uma mensagem para informar profissão e salário de um Trabalhador
+    var profissao = "professor";
+    let salario = 5046
+    let retornoSalario = `A profissão dele é ${profissao} e ele recebe ao mês ${salario} reais`;
+    console.log(retornoSalario);
 
 
-let opcoes = "1 - Brasil; 2 - Canada; 3 - Italia; 4 - Suiça; 5 - EUA;";
-let escolha = Number(promptFn(`Digite um numero e escolha um pais para saber sua Capital:;
-${opcoes}`));
-console.log(escolha)
-let escolhaUser = escolha;
+    //criem uma mensagem para informar raça e idade de um cachorro
 
-if (escolhaUser == 1) {
-    alertFn(`A capital do pais Brasil é Brasilia`);
-} else if (escolhaUser == 2) {
-    alertFn(`A capital do pais Canada é Ottawa`);
-} else if (escolhaUser == 3) {
-    alertFn(`A capital do pais Italia é roma`);
-} else if (escolhaUser == 4) {
-    alertFn(`A capital do pais Suiça é Berna`);
-} else if (escolhaUser == 5) {
-    alertFn(`A capital do pais EUA é Washington`);
-} else {
-    alertFn("Nenhuma escolha foi selecionada :( ");
-};
+    let raca = "Bruno";
+    let idadeCachorro = "-1";
+    let cachorro = `A idade do cachorro sarnento podre ${raca}, é de ${idadeCachorro} anos`;
+    console.log(cachorro);
 
-// tipos de dados Bancarios
-let banco = "Santander(1) Caixa(2) Itau(3) NU(4) Inter(5)";
-let escolhaBanco = Number(promptFn(`Escolha um banco :
-${banco}`));
-let tipoBanco = Number(promptFn("Escolha o tipo de banco: Corrente(1) Poupança(2)"));
-let tipoCartao = Number(promptFn("Escolha o tipo de Cartão: Credito(1) Debito(2) Os dois (3)"));
+    //Bloco paises//
 
-switch (escolhaBanco) {
+    let escolha = Number(promptFn(`Digite um numero e escolha um pais para saber sua Capital:
+1 - Brasil; 2 - Canada; 3 - Italia; 4 - Suiça; 5 - EUA;`));
+    console.log(escolha)
+    let escolhaUser = escolha;
 
-    case 1:
-        casoBanco = `Santander`;
-        break;
+    if (escolhaUser == 1) {
+        alertFn(`A capital do pais Brasil é Brasilia`);
+    } else if (escolhaUser == 2) {
+        alertFn(`A capital do pais Canada é Ottawa`);
+    } else if (escolhaUser == 3) {
+        alertFn(`A capital do pais Italia é roma`);
+    } else if (escolhaUser == 4) {
+        alertFn(`A capital do pais Suiça é Berna`);
+    } else if (escolhaUser == 5) {
+        alertFn(`A capital do pais EUA é Washington`);
+    } else {
+        alertFn("Nenhuma escolha foi selecionada :( ");
+    };
 
-    case 2:
-        casoBanco = "Caixa";
-        break;
+    // tipos de dados Bancarios
+    let escolhaBanco = Number(promptFn(`Escolha um banco :
+Santander(1) Caixa(2) Itau(3) NU(4) Inter(5)`));
+    let tipoBanco = Number(promptFn("Escolha o tipo de banco: Corrente(1) Poupança(2)"));
+    let tipoCartao = Number(promptFn("Escolha o tipo de Cartão: Credito(1) Debito(2) Os dois (3)"));
 
-    case 3:
-        casoBanco = `Itau`;
-        break;
+    switch (escolhaBanco) {
 
-    case 4:
-        casoBanco = "NU";
-        break;
+        case 1:
+            casoBanco = `Santander`;
+            break;
 
-    case 5:
-        casoBanco = `Inter`;
-        break;
+        case 2:
+            casoBanco = "Caixa";
+            break;
 
-    default:
-        casoBanco = "Nenhum";
-        break;
-}
+        case 3:
+            casoBanco = `Itau`;
+            break;
 
-switch (tipoBanco) {
+        case 4:
+            casoBanco = "NU";
+            break;
 
-    case 1:
-        casoTipo = `Corrente`;
-        break;
+        case 5:
+            casoBanco = `Inter`;
+            break;
 
-    case 2:
-        casoTipo = "Poupança";
-        break;
+        default:
+            casoBanco = "Nenhum";
+            break;
+    }
 
-    default:
-        casoTipo = "Nenhum";
-        break;
-}
+    switch (tipoBanco) {
 
-switch (tipoCartao) {
+        case 1:
+            casoTipo = `Corrente`;
+            break;
 
-    case 1:
-        casoCartao = ` Credito`;
-        break;
+        case 2:
+            casoTipo = "Poupança";
+            break;
 
-    case 2:
-        casoCartao = "Debito";
-        break;
+        default:
+            casoTipo = "Nenhum";
+            break;
+    }
 
-    case 3:
-        casoCartao = " Credito e Debito";
-        break;
+    switch (tipoCartao) {
+
+        case 1:
+            casoCartao = ` Credito`;
+            break;
+
+        case 2:
+            casoCartao = "Debito";
+            break;
+
+        case 3:
+            casoCartao = " Credito e Debito";
+            break;
 
 
-    default:
-        casoCartao = "Nenhum";
-        break;
-}
+        default:
+            casoCartao = "Nenhum";
+            break;
+    }
 
-alertFn(`Voce escolheu o banco ${casoBanco}, com uma conta ${casoTipo} e com cartão ${casoCartao}.`);
+    alertFn(`Voce escolheu o banco ${casoBanco}, com uma conta ${casoTipo} e com cartão ${casoCartao}.`);
+
+    //renda familiar//
+
+    let rendaFamiliar = 1550;
+    let salarioMinimo = 1500;
+
+    if (rendaFamiliar < salarioMinimo) {
+        alertFn('Pobre Miseravel')
+    } else {
+        alertFn("Não vai morrer de fome")
+    }
 
 })();
+
