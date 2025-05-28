@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em;
+}
+
+#meuElemento {
+    background-color: black;
+    width: 10em;
+    height: 10em;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+.square {
+    border-radius: 0;
+    transition: 1s;
+}
+
+.circle {
+    border-radius: 100%;
+    transition: 1s;
+}
+
