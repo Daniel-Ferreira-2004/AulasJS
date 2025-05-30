@@ -11,9 +11,7 @@ function tornarQuadrado(){
 }
 
 function alternarQuadrado() {
-    if (meuElemento.classList == 'circle'){
-        tornarQuadrado();
-    }else if (meuElemento.classList == 'square') {
-        tornarCirculo();
-    }
+    meuElemento.classList.toggle('circle');
+    meuElemento.classList.toggle('square');
+
 }
