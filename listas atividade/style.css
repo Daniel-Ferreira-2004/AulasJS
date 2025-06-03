@@ -1,0 +1,31 @@
+#container {
+    margin: 20px auto;
+    border: 5px black solid;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    background-color: blue;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#addTask:focus{
+    outline: none;
+}
+
+#addTask:hover {
+    background-color: rgb(13, 59, 1);
+    transition: 1s;
+}
