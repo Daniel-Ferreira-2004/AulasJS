@@ -38,30 +38,29 @@ header a{
 }*/
 
 .swiper {
-    height: 35rem;/*altura da sessão*/
+    height: 30rem;/*altura da sessão*/
     position: relative;/*posição relativa em relação a viewport(tela)*/
 }
 
 .swiper-slide {/*aqui estamos chamado uma das classes*/
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
-.caroussel-text {
-    position: absolute; /*centraliza o elemento exatamente no meio do container (corrige o deslocamento)*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*centraliza o elemento exatamente no meio do container (corrige o deslocamento)*/
-}
 .carousel-text {
-    text-align: center;
-    margin: 1em;
+    position: absolute; /*centraliza o elemento exatamente no meio do container (corrige o deslocamento)*/
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    padding: 1em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.37);
+    transform: translate(-50%, -50%); /*centraliza o elemento exatamente no meio do container (corrige o deslocamento)*/
 }
 
 .carousel-text h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-
 }
 
 .carousel-text p {
@@ -69,19 +68,12 @@ header a{
 }
 
 .caixa-01 {
-    background-image: url(img/Messi2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    background-image: url(img/hype-messi-4k-ultra-hd-cy8c7jsaxcz0l9wn.webp);
 }
 
 .caixa-02 {
-    background-image: url(img/Messi3.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(img/bomba-de-punho-messi-4k-ultra-hd-w9avf1ytzxsis77h.webp);
 }
 .caixa-03 {
-    background-image: url(img/Messi4.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(img/execute-messi-4k-ultra-hd-qssxpofch6714jho.webp);
 }
